@@ -45,6 +45,16 @@ img {
     padding: .5em 1.5em;
 }
 
+.icon::before {
+    font-weight: 900; 
+    font-family: "Font Awesome 5 Free"; 
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 .game {
     position: relative;
     width: 12.5em;
@@ -100,6 +110,17 @@ img {
     align-items: center;
 }
 
+.viewers {
+    display: flex;
+    align-items: center;
+}
+
+.viewers::before {
+    content: "\f007";
+    color: rgb(255, 255, 255, 0.85);
+    font-size: .85em;
+    margin-right: .5em;
+}
 
 .back {
    opacity: 0;
@@ -114,7 +135,7 @@ img {
    transform: translateY(35%);
 }
 
-.streamers {
+.streamers.icon {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -122,6 +143,7 @@ img {
 
 .streamer {
     font-size: .9rem;
+    padding: 0 1em;
 }
 
 .streaming-info {
@@ -151,6 +173,7 @@ img {
     opacity: 0;
     transition: 250ms;
     border-radius: var(--br);
+    margin-bottom: -1.5em;
 }
 
 .game:hover .front {
